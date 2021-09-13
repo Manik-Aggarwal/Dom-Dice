@@ -15,7 +15,7 @@ body {
 body::before{
   content: "";
   position: absolute;
-  background: url('./images/bg.jpg');
+  background: url('https://github.com/Manik-Aggarwal/Dom-Dice/blob/main/images/bg.jpg?raw=true');
   background-repeat: no-repeat;
   background-size: 100%;
   height: 100%;
