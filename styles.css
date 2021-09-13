@@ -15,7 +15,7 @@ body {
 body::before{
   content: "";
   position: absolute;
-  background: url('https://github.com/Manik-Aggarwal/Dom-Dice/blob/main/images/bg.jpg?raw=true');
+  background: url('images/bg.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   height: 100%;
@@ -25,9 +25,13 @@ body::before{
   z-index: -1;
   opacity:0.2;
 }
-
+@media screen and (max-width:1591px){
+  body::before{
+  background-repeat: repeat-y;
+}
+}
 h1 {
-  margin: 30px;
+  margin: 20px;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
   font-size: 6rem;
@@ -45,7 +49,6 @@ img {
 }
 
 footer {
-  margin-top: 2%;
   color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
@@ -53,7 +56,7 @@ footer {
 /*  */
 ul {
   position: absolute;
-  top: 90%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
@@ -177,4 +180,7 @@ ul li:hover:nth-child(5) a:before {
 ul li:hover:nth-child(5) a:after {
   background: linear-gradient(#400080, transparent),
     linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
+#ul2{
+  margin-top: 60px;
 }
